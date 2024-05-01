@@ -1,4 +1,5 @@
-import '../Component/Styles/Sass/Navbar.css'
+
+
 export default function Home() {
   return (
     <main >
