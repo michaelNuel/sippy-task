@@ -1,0 +1,38 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar_container {
+  background-color: white;
+}
+
+.navbar {
+  padding: 0.7rem, 0rem, 0.7rem, 0rem;
+}
+.navbar .navbar_wrapper {
+  display: flex;
+  align-items: center;
+  margin-right: 55px;
+  justify-content: flex-end;
+}
+.navbar .navbar_wrapper .navbar_menu {
+  display: flex;
+  float: center;
+  margin-right: 350px;
+}
+.navbar .navbar_wrapper .navbar_menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.navbar .navbar_wrapper .navbar_menu ul li {
+  font-size: 14px;
+  margin-left: 12px;
+}
+.navbar .navbar_wrapper .navbar_icons {
+  display: flex;
+  justify-content: space-around;
+  float: inline-end;
+  margin-left: 23px;
+}/*# sourceMappingURL=Navbar.css.map */

@@ -1,0 +1,51 @@
+.heropage {
+  height: 330px;
+  background-color: white;
+}
+.heropage .bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/longImage.png) no-repeat center center/cover;
+  height: 306px;
+  background-blend-mode: soft-light;
+}
+.heropage .bg .bg_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heropage .bg .bg_wrapper .bg_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heropage .bg .bg_wrapper .wrapper_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -3.5rem;
+  align-items: center;
+}
+.heropage .bg .bg_wrapper .wrapper_container .wrapper_container_child_one .child_one_text {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.heropage .bg .bg_wrapper .wrapper_container .wrapper_container_child_two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -2.8rem;
+  gap: 0.5rem;
+}
+.heropage .bg .bg_wrapper .wrapper_container .wrapper_container_child_two .child_two_child .child_two_text {
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+.heropage .bg .bg_wrapper .wrapper_container .wrapper_container_child_two .wrapper_icon {
+  margin-bottom: 0.3rem;
+}
+.heropage .bg .bg_wrapper .wrapper_container .wrapper_container_child_two .wrapper_child_three .child_three_text {
+  font-size: 0.7rem;
+  font-weight: 500;
+}/*# sourceMappingURL=Homepg.css.map */

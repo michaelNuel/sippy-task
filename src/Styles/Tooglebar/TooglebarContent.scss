@@ -1,0 +1,120 @@
+@import '../Variables/ColorVariables.scss';
+@import '../Partials/mixins.scss';
+
+.tooglebar_content_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .tooglebar_child_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16rem;
+
+        .tooglebar_child_left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            .tooglebar_child_wrapper {
+                border-right: 1px solid $Tetiary;
+                padding-right:.8rem;
+
+                .tooglebar_child_wrapper_left {
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+
+                    .tooglebar_child_left_left {
+                      
+                        .tooglebar_child_left_left_image{
+                           margin-top:.3rem ;
+                        }
+                    }
+
+                    .tooglebar_child_left_right {
+
+                        .tooglebar_child_left_right_child {
+
+                            .tooglebar_child_left_right_text {
+                              @include textStyle
+                            }
+
+                        }
+                    }
+                }
+
+                // .tooglebar_child_wrapper_middle {}
+
+                // .tooglebar_child-wrapper_right {}
+            }
+
+            .tooglebar_child_wrapper_duo {
+
+                .tooglebar_child_wrapper_duo_child {
+
+                    .tooglebar_child_wrapper_duo_child_text {
+                        @include textStyle
+                    }
+                }
+            }
+
+        }
+
+        .tooglebar_child_right {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+
+            .tooglebar_child_right_left{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                
+                .tooglebar_child_right_left_text_wrapper_left{
+
+
+                    .tooglebar_child_right_left_text{
+                       @include textStyle
+                    }
+                }
+
+
+                .tooglebar_child_right_left_text_wrapper_right{
+                    background-color: $Primary;
+                    padding: .1rem .6rem .1rem .6rem;
+
+                    .tooglebar_child_right_box{
+                        @include textStyle;
+                        color:$Tetiary;
+                    }
+                }
+
+            }
+
+
+            .tooglebar_child_right_right{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .tooglebar_child_right_right_text_wrapper_left{
+
+                 .tooglebar_child_right_right_text{
+                    @include textStyle
+                 }
+                }
+
+                .tooglebar_child_right_right_text_wrapper_right{
+                    background-color: $Primary;
+                    padding: .1rem .6rem .1rem .6rem;
+
+                    .tooglebar_child_right_right_box{
+                        @include textStyle;
+                        color:$Tetiary;
+                    }
+                }
+            }
+        }
+    }
+}

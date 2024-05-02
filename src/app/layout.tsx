@@ -4,6 +4,8 @@ import "./globals.css";
 import Providers from "@/Component/Provider/Providerr";
 
 
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

@@ -1,0 +1,13 @@
+@import '../../Styles/Variables/ColorVariables.scss';
+
+.wrapper{
+    height: 1700vh;
+
+    .toogle_bar{
+        position: sticky;
+        top: .3vh;
+        background-color: $Secondary;
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+      }
+}

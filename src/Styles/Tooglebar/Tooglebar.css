@@ -1,0 +1,10 @@
+.wrapper {
+  height: 1700vh;
+}
+.wrapper .toogle_bar {
+  position: sticky;
+  top: 0.3vh;
+  background-color: #FAF4F4;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}/*# sourceMappingURL=Tooglebar.css.map */
