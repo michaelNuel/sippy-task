@@ -1,6 +1,6 @@
 'use client'
 
-import { store } from "@/State/State"
+import { store } from "@/State/Store"
 import { Provider } from "react-redux"
 
 

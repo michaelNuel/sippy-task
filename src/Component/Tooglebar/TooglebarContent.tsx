@@ -8,7 +8,7 @@ export default function TooglebarContent() {
             <div className='tooglebar_child_wrapper'>
                 <div className='tooglebar_child_left'>
                     <div className='tooglebar_child_wrapper'>
-                        <div className='tooglebar_child_wrapper_left'>
+                        <div  className='tooglebar_child_wrapper_left'>
                             <div className='tooglebar_child_left_left'>
                                 <div className='tooglebar_child_left_left_image'>
                                     <Image
@@ -37,6 +37,7 @@ export default function TooglebarContent() {
                                     width={18}
                                 />
                             </div>
+                            {/* <h2>7</h2> */}
                         </div>
                         <div className='tooglebar_child_wrapper_right'>
                             <div>
@@ -48,6 +49,7 @@ export default function TooglebarContent() {
                                     width={18}
                                 />
                             </div>
+                            {/* <h2>7</h2> */}
                         </div>
                     </div>
 

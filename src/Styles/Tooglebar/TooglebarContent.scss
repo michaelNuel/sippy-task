@@ -2,6 +2,7 @@
 @import '../Partials/mixins.scss';
 
 .tooglebar_content_wrapper {
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,16 +10,22 @@
     .tooglebar_child_wrapper {
         display: flex;
         align-items: center;
-        gap: 16rem;
+        justify-content: space-between;
 
         .tooglebar_child_left {
             display: flex;
             align-items: center;
             gap: 1rem;
+            margin-right: 15rem;
 
             .tooglebar_child_wrapper {
                 border-right: 1px solid $Tetiary;
-                padding-right:.8rem;
+                padding-right: .8rem;
+                // background-color: red;
+                display: flex;
+                justify-self: flex-start;
+
+
 
                 .tooglebar_child_wrapper_left {
                     display: flex;
@@ -26,9 +33,9 @@
                     align-items: center;
 
                     .tooglebar_child_left_left {
-                      
-                        .tooglebar_child_left_left_image{
-                           margin-top:.3rem ;
+
+                        .tooglebar_child_left_left_image {
+                            margin-top: .3rem;
                         }
                     }
 
@@ -37,16 +44,20 @@
                         .tooglebar_child_left_right_child {
 
                             .tooglebar_child_left_right_text {
-                              @include textStyle
+                                @include textStyle
                             }
 
                         }
                     }
                 }
 
-                // .tooglebar_child_wrapper_middle {}
+                .tooglebar_child_wrapper_middle {
+                    margin-left: 3rem;
+                }
 
-                // .tooglebar_child-wrapper_right {}
+                .tooglebar_child_wrapper_right {
+                    margin-left: 3rem;
+                }
             }
 
             .tooglebar_child_wrapper_duo {
@@ -65,53 +76,54 @@
             display: flex;
             justify-content: center;
             gap: 1rem;
+            margin-left: 15rem;
 
-            .tooglebar_child_right_left{
+            .tooglebar_child_right_left {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
-                
-                .tooglebar_child_right_left_text_wrapper_left{
+
+                .tooglebar_child_right_left_text_wrapper_left {
 
 
-                    .tooglebar_child_right_left_text{
-                       @include textStyle
+                    .tooglebar_child_right_left_text {
+                        @include textStyle
                     }
                 }
 
 
-                .tooglebar_child_right_left_text_wrapper_right{
+                .tooglebar_child_right_left_text_wrapper_right {
                     background-color: $Primary;
                     padding: .1rem .6rem .1rem .6rem;
 
-                    .tooglebar_child_right_box{
+                    .tooglebar_child_right_box {
                         @include textStyle;
-                        color:$Tetiary;
+                        color: $Tetiary;
                     }
                 }
 
             }
 
 
-            .tooglebar_child_right_right{
+            .tooglebar_child_right_right {
                 display: flex;
                 align-items: center;
                 gap: 1rem;
 
-                .tooglebar_child_right_right_text_wrapper_left{
+                .tooglebar_child_right_right_text_wrapper_left {
 
-                 .tooglebar_child_right_right_text{
-                    @include textStyle
-                 }
+                    .tooglebar_child_right_right_text {
+                        @include textStyle
+                    }
                 }
 
-                .tooglebar_child_right_right_text_wrapper_right{
+                .tooglebar_child_right_right_text_wrapper_right {
                     background-color: $Primary;
                     padding: .1rem .6rem .1rem .6rem;
 
-                    .tooglebar_child_right_right_box{
+                    .tooglebar_child_right_right_box {
                         @include textStyle;
-                        color:$Tetiary;
+                        color: $Tetiary;
                     }
                 }
             }
