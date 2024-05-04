@@ -1,0 +1,24 @@
+@import '../Partials/mixins.scss';
+.btn_{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: -4rem
+}
+
+.btnStyles{
+    @include btn;
+    border: transparent;
+}
+
+
+
+.nextbtn_wrapper{
+    .btn_next{
+        @include btn;
+        border: transparent
+    }
+}
+
+

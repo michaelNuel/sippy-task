@@ -1,0 +1,25 @@
+.btn_ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: -4rem;
+}
+
+.btnStyles {
+  background-color: #FFF9E5;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  color: black;
+  border: transparent;
+}
+
+.nextbtn_wrapper .btn_next {
+  background-color: #FFF9E5;
+  border-radius: 10px;
+  height: 50px;
+  width: 50px;
+  color: black;
+  border: transparent;
+}/*# sourceMappingURL=Btnmain.css.map */

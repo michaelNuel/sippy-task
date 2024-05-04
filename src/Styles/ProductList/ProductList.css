@@ -1,0 +1,17 @@
+.grid_wrapper .grid_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr, 1fr));
+  gap: 10px;
+}
+.grid_wrapper .grid_container .grid_container_child {
+  margin-top: -4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 6em;
+  color: black;
+  font-size: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+  text-align: center;
+  padding: 9rem;
+}/*# sourceMappingURL=ProductList.css.map */

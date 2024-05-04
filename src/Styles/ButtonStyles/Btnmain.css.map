@@ -1,0 +1,1 @@
+{"version":3,"sources":["Btnmain.scss","Btnmain.css","../Partials/mixins.scss","../Variables/ColorVariables.scss"],"names":[],"mappings":"AACA;EACI,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,SAAA;EACA,iBAAA;ACAJ;;ADGA;EEDI,yBCLK;EDML,mBAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EFDA,mBAAA;ACIJ;;ADEI;EETA,yBCLK;EDML,mBAAA;EACA,YAAA;EACA,WAAA;EACA,YAAA;EFOI,mBAAA;ACKR","file":"Btnmain.css"}

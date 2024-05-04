@@ -4,6 +4,8 @@ import axios from 'axios'
 interface Product {
     id: number;
     title: string;
+    price: number;
+    image: string
     // Add other properties as needed
 }
 
@@ -19,18 +21,10 @@ const initialState: ProductsState = {
     error: null,
 };
 
-// export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
-//     const response = await fetch('https://dummyjson.com/products');
-//     if (!response.ok) {
-//       throw new Error('Failed to fetch products');
-//     }
-//     const data = await response.json();
-//     return data as Product[];
-//   })
 
 export const fetchProducts= createAsyncThunk('products/fetchProducts', () => {
     return axios
-      .get('https://fakestoreapi.com/products')
+      .get('http://localhost:3000/api/items')
       .then(response => response.data)
   })
 
@@ -53,19 +47,6 @@ const productsSlice = createSlice({
             });
     },
 });
-
-
-// export const fetchProducts = createAsyncThunk<Product[], void>(
-//     'products/fetchProducts', // Action type prefix
-//     async () => {
-//         const response = await fetch('https://dummyjson.com/products');
-//         if (!response.ok) {
-//             throw new Error('Failed to fetch products');
-//         }
-//         const data = await response.json();
-//         return data as Product[];
-//     }
-// );
 
 
 
