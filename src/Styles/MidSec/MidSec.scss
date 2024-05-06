@@ -3,7 +3,6 @@
 .midSec_container{
     height: 30vh;
     background-color: $Secondary;
-    // background-color: red;
 
     .midSec_wrapper{
         display: flex;
@@ -24,7 +23,7 @@
             }
 
             .midSec_subText{
-                // margin-top: -1.4rem;
+                margin-top: -1.4rem;
                 width: 14rem;
                .subText_text{
                 font-size: 14px;

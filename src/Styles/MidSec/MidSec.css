@@ -20,6 +20,7 @@
   color: black;
 }
 .midSec_container .midSec_wrapper .midSec_child .midSec_subText {
+  margin-top: -1.4rem;
   width: 14rem;
 }
 .midSec_container .midSec_wrapper .midSec_child .midSec_subText .subText_text {

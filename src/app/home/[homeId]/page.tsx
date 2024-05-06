@@ -1,8 +1,12 @@
 'use client'
 import Navbarlist from '@/Component/Navbar/Navbarlist';
 import Image from 'next/image';
-// import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
+import '../../../Styles/ProductDetails/ProductDetails.css'
+import { useSelector } from 'react-redux';
+import { RootState } from '@/State/Store';
+import { useDispatch } from 'react-redux';
+import { decrement, increment } from '@/State/Counter/counterSlice';
 
 interface ItemProps {
   params: {
@@ -117,9 +121,8 @@ const Item: React.FC<ItemProps> = ({ params }) => {
     },
 
   ];
-
-  // const router = useRouter();
-  // const { homeId } = router.query; // Get the homeId from the query parameter
+ const count = useSelector((state: RootState) => state.counter.value);
+ const dispatch = useDispatch();
 
   const homeId = params.homeId; // Get the homeId from the params prop
 
@@ -132,30 +135,167 @@ const Item: React.FC<ItemProps> = ({ params }) => {
   }, [homeId]);
 
   return (
-    <div>
-      <div>
-        <Navbarlist />
-      </div>
+    <div className='container'>
+      <div className='container_child'>
+        <div>
+          <Navbarlist />
+        </div>
+        {/* Below the navbar */}
+        <div className='path_wrapper'>
+          <div className='path_wrapper_left'>
+            <h2 className='path_wrapper_text'>Home</h2>
+          </div>
+          <div className='path_wrapper_icon'>
+            <Image
+              alt={'#'}
+              src={'/greater.png'}
+              className='sign'
+              width={8}
+              height={8}
+            />
+          </div>
+          <div className='path_wrapper_middle_text'>
+            <h2 className='path_wrapper_text'>Shop</h2>
+          </div>
 
-      <div>
-        <div>
-          <h2>home</h2>
+          <div className='path_wrapper_icon'>
+            <Image
+              alt={'#'}
+              src={'/greater.png'}
+              className='sign'
+              width={8}
+              height={8}
+            />
+          </div>
+          <div className='path_wrapper_right'>
+            {item && (
+              <div className='path_wrapper_right_text_wrapper'>
+                <h2 className='path_right_text'>{item.title}</h2>
+              </div>
+            )}
+          </div>
         </div>
-        <div>
-          <Image alt={'#'} src={'/greater.png'} className='sign' width={8} height={8} />
-        </div>
-        <div>
-          <h2>Shop</h2>
+
+        {/* Body of the page  */}
+        <div className='body_wrapper_container'>
+          <div className='body_wrapper'>
+            <div className='body_wrapper_left'>
+              {item && (
+                <div className='body_wrapper_Image_container'>
+                  <Image
+                    src={`/${item?.image}`}
+                    alt='#'
+                    width={411}
+                    height={391}
+                  />
+                </div>
+              )}
+            </div>
+
+            <div className='body_wrapper_right'>
+              <div className='body_wrapper_right_top'>
+                <div className='body_wrapper_right_heading'>
+                  {item && (
+                    <div className='heading_details'>
+                      <div className='heading_details_top'>
+                        <h2 className='heading_title'>{item.title}</h2>
+                      </div>
+                      <div className='heading_details_bottom'>
+                        <h2 className='heading_price'>{item.price}</h2>
+                      </div>
+                    </div>
+                  )}
+                </div>
+                <div className='review_wrapper'>
+                  <div className='review_wrapper_left'>
+                    star
+                  </div>
+                  <div className='review_wrapper_right'>
+                    5 customer review
+                  </div>
+                </div>
+                <div className='body_wrapper_details_container'>
+                  <div className='body_wrapper_item_details'>
+                    <h3 className='item_details_text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero laborum id nemo, natus deserunt quasi corrupti saepe quaerat non aliquid facere tempore ducimus voluptate eaque est dolores voluptates consequuntur vitae.</h3>
+                  </div>
+
+                  <div className='body_wrapper_item_size'>
+                    <div className='body_wrapper_item_text'>
+                      <h2 className='item_text'>Size</h2>
+                    </div>
+                    <div className='size_wrapper'>
+                      <div className='size_label_left'>
+                        <button className='btn_size_l'>
+                          L
+                        </button>
+                      </div>
+                      <div className='size_label_middle'>
+                        <button className='btn_size_xl'>
+                          xl
+                        </button>
+                      </div>
+                      <div className='size_label_right'>
+                        <button className='btn_size_xs'>
+                          xs
+                        </button>
+                      </div>
+                    </div>
+
+
+                    <div className='color_wrapper'>
+                      <div className='body_wrapper_item_color'>
+                        <h2 className='item_text'>Color</h2>
+                      </div>
+
+                      <div className='color_div'>
+                        <div className='color_div_left'>
+
+                        </div>
+                        <div className='color_div_middle'>
+
+                        </div>
+                        <div className='color_div_right'>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className='cart_increment_wrapper'>
+                      <div className='increment_decrement_wrapper'>
+                        <div className='decrement_wrapper'>
+                          <button onClick={() => dispatch(decrement())} className='decrement'>
+                            -
+                          </button>
+                        </div>
+                        <div className='display'>
+                          {count}
+                        </div>
+                        <div className='increment_wrapper'>
+                          <button onClick={() => dispatch(increment())} className='increment'>
+                            +
+                          </button>
+                        </div>
+                      </div>
+
+                      <div className='cart_button_wrapper_container'>
+                        <div className='cart_button_wrapper'>
+                          <button className='cart_btn'>
+                            Add to Cart
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className='body_wrapper_right_bottom'>
+               
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      {item && (
-        <div>
-          <h2>{item.title}</h2>
-        </div>
-      )}
-
-      {/* Render the homeId parameter */}
-      <div>hello {params.homeId}</div>
     </div>
   );
 };
