@@ -25,7 +25,7 @@ export default function Btnmain(props: BtnmainProps) {
         {
             id: 2,
             image: './item2.png',
-            title: 'Granite dining table with dining chair',
+            title: 'Granite dining table',
             price: '$25,000.00'
         },
         {
@@ -115,11 +115,14 @@ export default function Btnmain(props: BtnmainProps) {
 
     ]
     const [currentPage, setCurrentPage] = useState(1);
+    // const [active, setActive] = useState('btnStyles')
     useEffect(() => {
         // This effect runs whenever currentPage changes.
         // You can perform side effects here based on the currentPage value.
         console.log(`Page ${currentPage} is displayed.`);
     }, [currentPage]);
+
+  
 
 
     const handleButtonClick = (pageNumber: number) => {

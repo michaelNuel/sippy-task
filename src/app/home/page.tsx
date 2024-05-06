@@ -1,4 +1,6 @@
+import Footer from '@/Component/Footer/Footer'
 import Homepg from '@/Component/HomePage/Homepg'
+import MidSec from '@/Component/MidSec/MidSec'
 import Navbarlist from '@/Component/Navbar/Navbarlist'
 import Tooglebar from '@/Component/Tooglebar/Tooglebar'
 import React from 'react'
@@ -11,6 +13,8 @@ export default function Homepage() {
             <div>
                 <Tooglebar />
             </div>
+            <MidSec />
+            <Footer />
         </>
     )
 }

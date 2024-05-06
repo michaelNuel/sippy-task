@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from 'next/font/local'
 import Providers from "@/Component/Provider/Providerr";
 
 
 
+const myFont = localFont({
+  src: '../static-fonts/Poppins-Regular.otf',
+  display: 'swap'
+})
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-        <body className={inter.className}>{children}</body>
+        <body className={myFont.className}>{children}</body>
       </Providers>
     </html>
   );

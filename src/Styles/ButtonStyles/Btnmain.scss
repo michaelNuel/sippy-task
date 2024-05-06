@@ -12,6 +12,10 @@
     border: transparent;
 }
 
+.active .btnStyles {
+    @include btn_active;
+    border: transparent;
+  }
 
 
 .nextbtn_wrapper{

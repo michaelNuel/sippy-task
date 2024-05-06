@@ -5,38 +5,18 @@ import { fetchProducts } from '../../State/Product/productSlice';
 import { AppDispatch, RootState } from '../../State/Store';
 import Image from 'next/image';
 import '../../Styles/ProductList/ProductList.css'
+import Link from 'next/link';
 
 type ProductListProps = {
     imageList: {
         id: number,
         image: string
-        title: string 
+        title: string
         price: string
     }[]
 }
 
 export default function ProductList(props: ProductListProps) {
-
-    // const dispatch = useDispatch<AppDispatch>();
-    // const products = useSelector((state: RootState) => state.products.products);
-    // const status = useSelector((state: RootState) => state.products.status);
-    // const error = useSelector((state: RootState) => state.products.error);
-
-    // console.log("Products:", products); // Add this line to log products
-
-    // useEffect(() => {
-    //     if (status === 'idle') {
-    //         dispatch(fetchProducts());
-    //     }
-    // }, [status, dispatch]);
-
-    // if (status === 'loading') {
-    //     return <div>Loading...</div>;
-    // }
-
-    // if (status === 'failed') {
-    //     return <div>Error: {error}</div>;
-    // }
     return (
         <div className='grid_wrapper'>
             <div className='grid_container'>
@@ -54,12 +34,19 @@ export default function ProductList(props: ProductListProps) {
                                     />
                                 </div>
 
-                                <div>
-                                    <div>
-                                        <h2>{images.title}</h2>
+                                <div className='grid_container_details_text'>
+                                    <div className='grid_title_wrapper'>
+                                        <h2 className='grid_title_text'>{images.title}</h2>
                                     </div>
-                                    <div>
-                                        <h2>{images.price}</h2>
+                                    <div className='grid_price_container'>
+                                        <div className='grid_price_wrapper' >
+                                            <h2 className='grid_price_text'>{images.price}</h2>
+                                        </div>
+                                        <div className='buy_wrapper'>
+                                            <button  className='btn_wrapper'>
+                                                <Link className='btn_link' href={`/home/${images.id}`} id={`${images.id}`} >Buy</Link>
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

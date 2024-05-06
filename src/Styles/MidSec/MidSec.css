@@ -1,0 +1,29 @@
+.midSec_container {
+  height: 30vh;
+  background-color: #FAF4F4;
+}
+.midSec_container .midSec_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11rem;
+}
+.midSec_container .midSec_wrapper .midSec_child {
+  display: flex;
+  flex-direction: column;
+}
+.midSec_container .midSec_wrapper .midSec_child .midSec_mainText {
+  margin-top: 2rem;
+}
+.midSec_container .midSec_wrapper .midSec_child .midSec_mainText .mainText_text {
+  font-size: 22px;
+  color: black;
+}
+.midSec_container .midSec_wrapper .midSec_child .midSec_subText {
+  width: 14rem;
+}
+.midSec_container .midSec_wrapper .midSec_child .midSec_subText .subText_text {
+  font-size: 14px;
+  color: #9F9F9F;
+  font-weight: 400;
+}/*# sourceMappingURL=MidSec.css.map */

@@ -12,3 +12,20 @@
     width: 50px;
     color: black;
 }
+
+@mixin btn_active {
+    background-color: $active;
+    border-radius: 10px;
+    height: 55px;
+    width: 55px;
+    color: black;
+}
+
+@mixin buy_btn{
+    background-color: $button;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    color: black;
+    border: transparent;
+}

@@ -1,0 +1,88 @@
+.footer {
+  height: 60vh;
+}
+.footer .footer_wrapper {
+  display: grid;
+  margin-top: 5rem;
+  place-content: center;
+  place-items: center;
+}
+.footer .footer_wrapper_child {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.3rem;
+  border-bottom: 1px solid #D9D9D9;
+  gap: 6rem;
+  justify-content: space-between;
+}
+.footer .footer_wrapper_child .footer_wrapper_left {
+  width: 15rem;
+}
+.footer .footer_wrapper_child .footer_wrapper_left .left_text {
+  font-size: 12px;
+  line-height: 20px;
+  color: #9F9F9F;
+  font-weight: 400;
+}
+.footer .footer_wrapper_child .footer_links {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.footer .footer_wrapper_child .footer_links .footer_links_child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .footer_wrapper_child .footer_links .footer_links_child .footer_links_child_heading {
+  margin-left: 1rem;
+}
+.footer .footer_wrapper_child .footer_links .footer_links_child .footer_links_child_heading .child_heading {
+  font-size: 12px;
+  color: #9F9F9F;
+  font-weight: 400;
+}
+.footer .footer_wrapper_child .footer_links .footer_links_child .footer_link_links .links_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.footer .footer_wrapper_child .footer_links .footer_links_child .footer_link_links .links_list .links_text {
+  font-size: 12px;
+  color: black;
+  font-weight: 900;
+}
+.footer .footer_bottom {
+  margin-top: 1rem;
+  margin-right: 47rem;
+}
+.footer .footer_bottom .footer_bottom_child {
+  float: start;
+}
+.footer .footer_bottom .footer_bottom_child .footer_bottom_text {
+  font-size: 10px;
+}
+
+.News_wrapper {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 2rem;
+}
+.News_wrapper .input_bar_wrapper .input_bar {
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+}
+.News_wrapper .btn_wrapper .subscribe_btn {
+  font-size: 12px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+}/*# sourceMappingURL=Footer.css.map */

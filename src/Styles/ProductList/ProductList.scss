@@ -1,3 +1,5 @@
+@import '../../Styles/Partials/mixins.scss';
+
 .grid_wrapper {
 
     .grid_container {
@@ -17,6 +19,47 @@
             align-items: stretch;
             text-align: center;
             padding: 9rem;
+        }
+    }
+}
+
+
+
+.grid_container_details_text{
+    display: flex;
+    flex-direction: column;
+
+    .grid_titile_wrapper{
+        display: block;
+
+        .grid_title_text{
+            font-size: 14px;
+        }
+    }
+
+    .grid_price_container{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+
+        .grid_price_wrapper{
+
+            .grid_price_text{
+                font-size: 12px;
+            }
+        }
+
+        .buy_wrapper{
+            .btn_wrapper{
+                @include buy_btn;
+                font-size: 12px;
+
+                .btn_link{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
         }
     }
 }

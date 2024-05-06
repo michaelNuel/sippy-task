@@ -1,0 +1,38 @@
+@import '../Variables/ColorVariables.scss';
+
+.midSec_container{
+    height: 30vh;
+    background-color: $Secondary;
+    // background-color: red;
+
+    .midSec_wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 11rem;
+
+        .midSec_child{
+            display: flex;
+            flex-direction: column;
+
+            .midSec_mainText{
+               margin-top: 2rem;
+                .mainText_text{
+                    font-size:22px;
+                    color: black;
+                }
+            }
+
+            .midSec_subText{
+                // margin-top: -1.4rem;
+                width: 14rem;
+               .subText_text{
+                font-size: 14px;
+                color:$Tetiary;
+                font-weight: 400;
+               }
+            }
+        }
+    }
+}
+
