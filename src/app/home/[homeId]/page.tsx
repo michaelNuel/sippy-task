@@ -7,6 +7,8 @@ import { useSelector } from 'react-redux';
 import { RootState } from '@/State/Store';
 import { useDispatch } from 'react-redux';
 import { decrement, increment } from '@/State/Counter/counterSlice';
+import Footer from '@/Component/Footer/Footer';
+import Description from '@/Component/ProductDescription/Description';
 
 interface ItemProps {
   params: {
@@ -290,10 +292,63 @@ const Item: React.FC<ItemProps> = ({ params }) => {
               </div>
 
               <div className='body_wrapper_right_bottom'>
-               
+
+                <div className='bottom_line_one'>
+                  <div className='bottom_line_one_left'>
+                    <h2 className='left_one_text'>SKU</h2>
+                  </div>
+                  <div className='bottom_line_one_middle'>
+                    <h2 className='middle_one_text'>:</h2>
+                  </div>
+                  <div className='bottom_line_one_right'>
+                    <h2 className='right_one_text'>SS001</h2>
+                  </div>
+                </div>
+
+                <div className='bottom_line_two'>
+                  <div className='bottom_line_two_left'>
+                    <h2 className='left_two_text'>Category</h2>
+                  </div>
+                  <div className='bottom_line_two_middle'>
+                    <h2 className='middle_two_text'>:</h2>
+                  </div>
+                  <div className='bottom_line_two_right'>
+                    <h2 className='right_two_text'>Sofas</h2>
+                  </div>
+                </div>
+
+                <div className='bottom_line_three'>
+                  <div className='bottom_line_three_left'>
+                    <h2 className='left_three_text'>Tags</h2>
+                  </div>
+                  <div className='bottom_line_three_middle'>
+                    <h2 className='middle_three_text'>:</h2>
+                  </div>
+                  <div className='bottom_line_three_right'>
+                    <h2 className='right_three_text'>Sofas, Chair, Home, Shop</h2>
+                  </div>
+                </div>
+
+                <div className='bottom_line_four'>
+                  <div className='bottom_line_four_left'>
+                    <h2 className='left_four_text'>Share</h2>
+                  </div>
+                  <div className='bottom_line_four_middle'>
+                    <h2 className='middle_four_text'>:</h2>
+                  </div>
+                  <div></div>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+        
+        <div>
+          <Description />
+        </div>
+
+        <div>
+        <Footer />
         </div>
       </div>
     </div>

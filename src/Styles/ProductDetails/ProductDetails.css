@@ -29,10 +29,10 @@
 }
 .container .body_wrapper_container {
   margin-top: 1rem;
+  padding-bottom: 3rem;
 }
 .container .body_wrapper_container .body_wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 3rem;
 }
@@ -44,6 +44,9 @@
 .container .body_wrapper_container .body_wrapper .body_wrapper_right {
   display: flex;
   flex-direction: column;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_top {
+  padding-bottom: 1.5rem;
 }
 .container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_top .body_wrapper_right_heading .heading_details {
   display: flex;
@@ -177,6 +180,87 @@
   height: 3rem;
   width: 7rem;
   border-radius: 20px;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  border-top: 1px solid #9F9F9F;
+  gap: 0.2rem;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_one {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_one .bottom_line_one_left .left_one_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_one .bottom_line_one_middle .middle_one_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_one .bottom_line_one_right .right_one_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_two {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_two .bottom_line_two_left .left_two_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_two .bottom_line_two_middle .middle_two_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_two .bottom_line_two_right .right_two_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_three {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_three .bottom_line_three_left .left_three_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_three .bottom_line_three_middle .middle_three_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_three .bottom_line_three_right .right_three_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_four {
+  display: flex;
+  align-items: center;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_four .bottom_line_four_left .left_four_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
+}
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_bottom .bottom_line_four .bottom_line_four_middle .middle_four_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9F9F9F;
 }
 
 .container_child {

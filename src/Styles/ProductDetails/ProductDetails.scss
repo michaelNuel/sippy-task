@@ -2,7 +2,8 @@
 @import '../Variables/ColorVariables.scss';
 
 .container{
-    
+ 
+
     .path_wrapper{
         display: flex;
         align-items: center;
@@ -43,9 +44,10 @@
 
     .body_wrapper_container {
         margin-top: 1rem;
+        padding-bottom: 3rem;
         .body_wrapper{
             display: flex;
-            align-items: center;
+            // align-items: center;
             justify-content: center;
             gap:3rem;
 
@@ -65,6 +67,7 @@
                 
 
                 .body_wrapper_right_top{
+                    padding-bottom: 1.5rem;
                     
                     .body_wrapper_right_heading{
                         .heading_details{
@@ -250,6 +253,126 @@
                                         border-radius: 20px;
                                     }
                                 }
+                            }
+                        }
+
+                    }
+                }
+
+                .body_wrapper_right_bottom{
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 2rem;
+                    border-top: 1px solid $Tetiary;
+                    gap: .2rem;
+
+                    .bottom_line_one{
+                        display: flex;
+                        align-items: center;
+                        gap:1rem;
+
+                        .bottom_line_one_left{
+
+                            .left_one_text{
+                                @include textStyle;
+                                color: $Tetiary
+                            }
+                        }
+
+                        .bottom_line_one_middle{
+
+                            .middle_one_text{
+                                @include textStyle;
+                                color: $Tetiary;
+                            }
+                        }
+
+                        .bottom_line_one_right{
+
+                             .right_one_text{
+                                @include textStyle;
+                                color: $Tetiary;
+                             }
+                        }
+
+                    }
+
+
+                    .bottom_line_two{
+                        display: flex;
+                        align-items: center;
+                        gap: .6rem;
+
+                        .bottom_line_two_left{
+                            .left_two_text{
+                                @include textStyle;
+                                color: $Tetiary;
+                            }
+                        }
+
+                        .bottom_line_two_middle{
+
+                            .middle_two_text{
+                                @include textStyle;
+                                color: $Tetiary;
+                            }
+                        }
+
+                        .bottom_line_two_right{
+                            .right_two_text{
+                                @include textStyle;
+                                color: $Tetiary;
+                            }
+                        }
+                    }
+
+                    .bottom_line_three{
+                      display: flex;
+                      align-items: center;
+                      gap: .6rem;
+
+                      .bottom_line_three_left{
+
+                        .left_three_text{
+                            @include textStyle;
+                            color:$Tetiary;
+                        }
+                      }
+
+                      .bottom_line_three_middle{
+
+                        .middle_three_text{
+                            @include textStyle;
+                            color: $Tetiary;
+                        }
+                      }
+
+                      .bottom_line_three_right{
+
+                        .right_three_text{
+                            @include textStyle;
+                            color: $Tetiary;
+                        }
+                      }
+                    }
+
+                    .bottom_line_four{
+                        display: flex;
+                        align-items: center;
+
+                        .bottom_line_four_left{
+                            
+                            .left_four_text{
+                                @include textStyle;
+                                color: $Tetiary
+                            }
+                        }
+
+                        .bottom_line_four_middle{
+
+                            .middle_four_text{
+                                @include textStyle;
+                                color: $Tetiary
                             }
                         }
                     }
