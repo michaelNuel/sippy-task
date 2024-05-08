@@ -23,7 +23,7 @@ export default function ProductList(props: ProductListProps) {
                 <div className='grid_container_child'>
                     {props.imageList.map(images => {
                         return (
-                            <div className='grid_container_details_wrapper'>
+                            <div key={images.id} className='grid_container_details_wrapper'>
                                 <div key={images.id} className='grid_container_image'>
                                     <Image
                                         alt='#'

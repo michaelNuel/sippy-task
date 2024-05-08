@@ -1,0 +1,35 @@
+.related_product_container {
+  margin-top: 2rem;
+}
+.related_product_container .related_heading {
+  display: flex;
+  justify-content: center;
+}
+.related_product_container .related_heading .heading_text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.related_product_container .related_product_grid {
+  margin-top: -4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 6em;
+  color: black;
+  font-size: 10px;
+  justify-items: stretch;
+  align-items: stretch;
+  text-align: center;
+  padding: 9rem;
+}
+.related_product_container .viewmore {
+  display: flex;
+  justify-content: center;
+}
+.related_product_container .viewmore .viewmore_wrapper {
+  border-bottom: 1px solid black;
+}
+.related_product_container .viewmore .viewmore_wrapper .link_more {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}/*# sourceMappingURL=Related.css.map */

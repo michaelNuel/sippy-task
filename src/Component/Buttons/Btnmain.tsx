@@ -156,7 +156,7 @@ export default function Btnmain(props: BtnmainProps) {
                 <div className='btn_'>
                     {props.btn.map(btnPg => {
                         return (
-                            <div className='btnStyles_wrapper'>
+                            <div key={btnPg.id} className='btnStyles_wrapper'>
                                 <div className='button_wrapper'>
                                     <button className='btnStyles' onClick={() => handleButtonClick(btnPg.pageNumber)}>
                                         {btnPg.button}

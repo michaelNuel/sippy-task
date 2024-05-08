@@ -1,0 +1,42 @@
+.related_product_container {
+    margin-top: 2rem;
+    .related_heading{
+        display: flex;
+        justify-content: center;
+        .heading_text{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+
+    .related_product_grid {
+        margin-top: -4rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 6em;
+        color: black;
+        font-size: 10px;
+        // grid-gap: 4em;
+        justify-items: stretch;
+        align-items: stretch;
+        text-align: center;
+        padding: 9rem;
+    }
+
+
+    .viewmore{
+        display: flex;
+        justify-content: center;
+       
+
+      .viewmore_wrapper{
+        border-bottom: 1px solid black;
+        .link_more{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+           
+        }
+      }
+    }
+}

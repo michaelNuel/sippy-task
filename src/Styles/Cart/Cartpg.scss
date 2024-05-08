@@ -1,0 +1,54 @@
+@import '../Variables/ColorVariables.scss';
+@import '../Partials/mixins.scss';
+
+.cart_details_wrapper {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .cart_details_wrapper_left {
+
+        .item_table {
+            
+            .table_heading_wrapper{
+                background-color: $button;
+                .table_heading {
+                     display: flex;
+                     gap: 7rem;
+                    .heading_tag {
+                        
+                        .heading_text {
+                            font-size: 12px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+
+            .table_body{
+                display: flex;
+                align-items: center;
+
+                .body_table_row{
+
+                    .row_wrapper{
+
+                        display: flex;
+                        align-items: center;
+
+                        .row_tet_wrapper{
+
+                            .first_text{
+                                @include textStyle;
+                                color: black
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+    }
+}

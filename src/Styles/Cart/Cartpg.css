@@ -1,0 +1,31 @@
+.cart_details_wrapper {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.cart_details_wrapper .cart_details_wrapper_left .item_table .table_heading_wrapper {
+  background-color: #FFF9E5;
+}
+.cart_details_wrapper .cart_details_wrapper_left .item_table .table_heading_wrapper .table_heading {
+  display: flex;
+  gap: 7rem;
+}
+.cart_details_wrapper .cart_details_wrapper_left .item_table .table_heading_wrapper .table_heading .heading_tag .heading_text {
+  font-size: 12px;
+  font-weight: bold;
+}
+.cart_details_wrapper .cart_details_wrapper_left .item_table .table_body {
+  display: flex;
+  align-items: center;
+}
+.cart_details_wrapper .cart_details_wrapper_left .item_table .table_body .body_table_row .row_wrapper {
+  display: flex;
+  align-items: center;
+}
+.cart_details_wrapper .cart_details_wrapper_left .item_table .table_body .body_table_row .row_wrapper .row_tet_wrapper .first_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}/*# sourceMappingURL=Cartpg.css.map */
