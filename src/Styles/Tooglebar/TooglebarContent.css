@@ -76,8 +76,12 @@
   font-size: 14px;
   font-weight: 400;
 }
+.tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_right .tooglebar_child_right_right_text_wrapper_left .tooglebar_child_right_right_text_mobile {
+  font-size: 14px;
+  font-weight: 400;
+  display: none;
+}
 .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_right .tooglebar_child_right_right_text_wrapper_right {
-  background-color: white;
   padding: 0.1rem 0.6rem 0.1rem 0.6rem;
 }
 .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_right .tooglebar_child_right_right_text_wrapper_right .tooglebar_child_right_right_box {

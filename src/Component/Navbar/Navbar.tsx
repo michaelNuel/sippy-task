@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import '../../Styles/Navbar/Navbar.css'
+import '../../Styles/Navbar/NavbarResponsive.css';
 
 type navbarProps = {
     nav: {

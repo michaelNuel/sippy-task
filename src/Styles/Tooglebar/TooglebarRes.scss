@@ -1,0 +1,21 @@
+@import '../BreakPoints//BreakPoint.scss';
+@import '../Variables/ColorVariables.scss';
+
+@media only screen and (max-width: $mobile) {
+    // Styles for mobile devices
+
+    .wrapper {
+        // height: 290vh;
+        padding-bottom: 2rem;
+
+        .toogle_bar {
+            
+            position: sticky;
+            top: .3vh;
+            background-color: $Secondary;
+            // background-color: red ;
+            padding-top: .1rem;
+            padding-bottom: .1rem;
+        }
+    }
+}

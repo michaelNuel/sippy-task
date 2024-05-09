@@ -1,0 +1,20 @@
+@import '../BreakPoints/BreakPoint.scss';
+
+@media only screen and (max-width: $mobile) {
+        .navbar_container{
+            padding: .7rem 0 .7rem 0;
+            // background-color: red ;
+
+            .navbar{
+
+
+                .navbar_wrapper{
+                   
+                    .navbar_menu{
+                        display: none 
+                    }
+                }
+            }
+        }
+        
+}

@@ -1,5 +1,5 @@
 .wrapper {
-  height: 290vh;
+  padding-bottom: 2rem;
 }
 .wrapper .toogle_bar {
   position: sticky;

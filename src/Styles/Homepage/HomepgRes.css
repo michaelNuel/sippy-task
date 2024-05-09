@@ -1,0 +1,10 @@
+@media only screen and (max-width: 576px) {
+  .heropage .bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/longImage.png) no-repeat contain cover/contain;
+    height: 306px;
+    background-blend-mode: soft-light;
+  }
+}/*# sourceMappingURL=HomepgRes.css.map */

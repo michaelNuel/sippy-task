@@ -1,0 +1,151 @@
+@import '../BreakPoints/BreakPoint.scss';
+@import '../Variables/ColorVariables.scss';
+@import '../Partials/mixins.scss';
+
+
+@media only screen and (max-width: $mobile) {
+    // Styles for mobile devices
+
+
+    .tooglebar_content_wrapper {
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .tooglebar_child_wrapper {
+            display: flex;
+            align-items: center;
+            
+
+            .tooglebar_child_left {
+                display: flex;
+                align-items: center;
+                gap: .1rem;
+                margin-right: 0rem;
+
+                .tooglebar_child_wrapper {
+                    border-right: 1px solid $Tetiary;
+                    padding-right: .8rem;
+                    // background-color: red;
+                    display: flex;
+                    gap: .3rem;
+                    justify-self: flex-start;
+
+
+
+                    .tooglebar_child_wrapper_left {
+                        display: flex;
+                        gap: .1rem;
+                        align-items: center;
+
+                        .tooglebar_child_left_left {
+
+                            .tooglebar_child_left_left_image {
+                                margin-top: .3rem;
+                            }
+                        }
+
+                        .tooglebar_child_left_right {
+
+                            .tooglebar_child_left_right_child {
+
+                                .tooglebar_child_left_right_text {
+                                    @include textStyle
+                                }
+
+                            }
+                        }
+                    }
+
+                    .tooglebar_child_wrapper_middle {
+                        margin-left: 0rem;
+                        margin-top: .3rem;
+                    }
+
+                    .tooglebar_child_wrapper_right {
+                        margin-left: 0rem;
+                        margin-top: .3rem;
+
+                    
+                    }
+                }
+
+                .tooglebar_child_wrapper_duo {
+                    display: none;
+
+                    .tooglebar_child_wrapper_duo_child {
+
+                        .tooglebar_child_wrapper_duo_child_text {
+                            @include textStyle
+                        }
+                    }
+                }
+
+            }
+
+            .tooglebar_child_right {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-left: 0rem;
+
+                .tooglebar_child_right_left {
+                    display: flex;
+                    align-items: center;
+                    gap: .1rem;
+
+                    .tooglebar_child_right_left_text_wrapper_left {
+
+
+                        .tooglebar_child_right_left_text {
+                            @include textStyle
+                        }
+                    }
+
+
+                    .tooglebar_child_right_left_text_wrapper_right {
+                        background-color: $Primary;
+                        padding: .1rem .4rem .1rem .4rem;
+
+                        .tooglebar_child_right_box {
+                            @include textStyle;
+                            color: $Tetiary;
+                        }
+                    }
+
+                }
+
+
+                .tooglebar_child_right_right {
+                    display: flex;
+                    align-items: center;
+                    gap: .1rem;
+
+                    .tooglebar_child_right_right_text_wrapper_left {
+
+                        .tooglebar_child_right_right_text {
+                            @include textStyle;
+                            display: none; 
+                        }
+
+                        .tooglebar_child_right_right_text_mobile{
+                            @include textStyle
+                        }
+                    }
+
+                    .tooglebar_child_right_right_text_wrapper_right {
+                        // padding: .1rem .4rem .1rem .4rem;
+                        background-color: $Secondary;
+                        border-left: 1px solid $Tetiary;
+
+                        .tooglebar_child_right_right_box {
+                            @include textStyle;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

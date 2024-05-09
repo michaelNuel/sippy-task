@@ -5,50 +5,182 @@
     height: 70vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 3rem;
+    margin-top: 3rem;
 
     .cart_details_wrapper_left {
 
-        .item_table {
-            
-            .table_heading_wrapper{
+        display: flex;
+        justify-content: center;
+
+        .left_container {
+            display: grid;
+            grid-template-rows: .1fr .4fr;
+            // gap: 1rem;
+
+            .subheading {
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
                 background-color: $button;
-                .table_heading {
-                     display: flex;
-                     gap: 7rem;
-                    .heading_tag {
-                        
-                        .heading_text {
-                            font-size: 12px;
-                            font-weight: bold;
-                        }
+                height: 50px;
+                padding: 0 1rem 0 1rem;
+                width: 700px;
+
+                .text_wrapper {
+
+                    .text_subheading {
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: black;
                     }
                 }
             }
 
-            .table_body{
+            .details_wrapper {
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr 1fr .5fr 1fr;
+
+
+                .Image_wrapper_title {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    float: inline-start;
+                    gap: .6rem;
+
+                    .image_wrapper {
+                        background-color: $button;
+                        width: 2rem;
+                        height: 2rem;
+                    }
+
+                    .title_wrapper {
+
+                        .title_text {
+                            font-size: 12px;
+                            color: black;
+                        }
+                    }
+                }
+
+                .price_wrapper {
+
+                    .price_text {
+                        font-size: 12px;
+                        color: black;
+                    }
+                }
+
+                .quantity_wrapper {
+
+                    .quantity_text {
+                        font-size: 12px;
+                        color: black;
+                    }
+                }
+
+                .sub_wrapper {
+
+                    .sub_text {
+                        font-size: 12px;
+                        color: black;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    .cart_details_wrapper_right {
+        display: flex;
+        justify-content: center;
+        background-color: $button;
+        height: 40vh;
+        width: 19rem;
+
+        .cart_totals {
+            display: flex;
+            flex-direction: column;
+
+            .cart_totals_heading {
+                display: flex;
+                justify-content: center;
+
+                .main_heading {
+                    font-size: 1.4rem;
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+
+            .subTotals_wrapper {
                 display: flex;
                 align-items: center;
+                gap: 2rem;
+                justify-content: space-between;
 
-                .body_table_row{
+                .subtotals_cont {
 
-                    .row_wrapper{
+                    .subtotals_text {
+                        font-size: 12px;
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
 
-                        display: flex;
-                        align-items: center;
 
-                        .row_tet_wrapper{
+                .price_wrapper {
+                    display: flex;
+                    justify-content: space-between;
 
-                            .first_text{
-                                @include textStyle;
-                                color: black
-                            }
-                        }
+                    .price_cart_text {
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: $Tetiary;
                     }
                 }
             }
-        
+
+
+            .totals_wrapper{
+                display: flex;
+                justify-content: space-between;
+
+                .total_heading_wrapper{
+                    .total_text{
+                        font-size: 12px;
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+
+                .total_price_wrapper{
+
+                    .total_price_text{
+                        font-size: 12px;
+                        color: $gold;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+
+            .link_wrapper {
+                display: flex;
+                justify-content: center;
+
+                .link{
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    font-size: 12px;
+                }
+            }
+
         }
     }
 }

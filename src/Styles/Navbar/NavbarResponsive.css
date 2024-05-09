@@ -1,0 +1,8 @@
+@media only screen and (max-width: 576px) {
+  .navbar_container {
+    padding: 0.7rem 0 0.7rem 0;
+  }
+  .navbar_container .navbar .navbar_wrapper .navbar_menu {
+    display: none;
+  }
+}/*# sourceMappingURL=NavbarResponsive.css.map */

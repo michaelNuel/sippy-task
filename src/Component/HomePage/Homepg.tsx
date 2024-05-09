@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import '../../Styles/Homepage/Homepg.css';
+import '../../Styles/Homepage/HomepgRes.css';
 
 type HomePageTextProps = {
   pageName: string,

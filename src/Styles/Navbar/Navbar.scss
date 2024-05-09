@@ -1,55 +1,56 @@
 @import '../Styles/Variables/ColorVariables.scss';
 
-body{
-    padding: 0;
-    margin: 0;
-   
-}
-
-.main{
-    overflow-x: hidden;
-}
-
-.navbar_container{
+.navbar_container {
     background-color: $Primary;
 }
 
-.navbar{
-   padding: .7rem, 0rem,  .7rem, 0rem;
-   
-    .navbar_wrapper{
+.navbar {
+    padding: .7rem, 0rem, .7rem, 0rem;
+
+    .navbar_wrapper {
         display: flex;
         align-items: center;
         margin-right: 55px;
         justify-content: flex-end;
-        
 
-        .navbar_menu{
+
+        .navbar_menu {
             display: flex;
             float: center;
-            margin-right:350px ;
+            margin-right: 350px;
 
-            ul{
+            ul {
                 display: flex;
                 list-style: none;
                 justify-content: space-around;
 
-               
 
-                li{
-                   font-size: 14px;
-                   margin-left: 12px;
-                   font-weight: bolder;
+
+                li {
+                    font-size: 14px;
+                    margin-left: 12px;
+                    font-weight: bolder;
                 }
             }
         }
 
 
-        .navbar_icons{
+        .navbar_icons {
             display: flex;
             justify-content: space-around;
             float: inline-end;
             margin-left: 23px;
         }
+    }
+}
+
+
+//Navbar Responsive styles
+
+@media only screen and (max-width: $mobile) {
+       
+    .navbar_container{
+
+        background-color: red ;
     }
 }

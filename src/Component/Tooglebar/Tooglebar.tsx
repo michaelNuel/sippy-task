@@ -2,6 +2,8 @@ import '../../Styles/Tooglebar/Tooglebar.css'
 import Btnlist from '../Buttons/Btnlist'
 import ProductList from '../Product/ProductList'
 import TooglebarContent from './TooglebarContent'
+import '../../Styles/Tooglebar/TooglebarRes.css';
+
 
 export default function Tooglebar() {
     return (

@@ -1,6 +1,7 @@
 @import '../Variables/ColorVariables.scss';
 @import '../Partials/mixins.scss';
 
+
 .tooglebar_content_wrapper {
     overflow-x: hidden;
     display: flex;
@@ -115,10 +116,15 @@
                     .tooglebar_child_right_right_text {
                         @include textStyle
                     }
+
+                    .tooglebar_child_right_right_text_mobile{
+                        @include textStyle;
+                        display: none;
+                    }
                 }
 
                 .tooglebar_child_right_right_text_wrapper_right {
-                    background-color: $Primary;
+                    
                     padding: .1rem .6rem .1rem .6rem;
 
                     .tooglebar_child_right_right_box {

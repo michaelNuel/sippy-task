@@ -1,0 +1,99 @@
+@media only screen and (max-width: 576px) {
+  .tooglebar_content_wrapper {
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    margin-right: 0rem;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left .tooglebar_child_wrapper {
+    border-right: 1px solid #9F9F9F;
+    padding-right: 0.8rem;
+    display: flex;
+    gap: 0.3rem;
+    justify-self: flex-start;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left .tooglebar_child_wrapper .tooglebar_child_wrapper_left {
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left .tooglebar_child_wrapper .tooglebar_child_wrapper_left .tooglebar_child_left_left .tooglebar_child_left_left_image {
+    margin-top: 0.3rem;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left .tooglebar_child_wrapper .tooglebar_child_wrapper_left .tooglebar_child_left_right .tooglebar_child_left_right_child .tooglebar_child_left_right_text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left .tooglebar_child_wrapper .tooglebar_child_wrapper_middle {
+    margin-left: 0rem;
+    margin-top: 0.3rem;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left .tooglebar_child_wrapper .tooglebar_child_wrapper_right {
+    margin-left: 0rem;
+    margin-top: 0.3rem;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left .tooglebar_child_wrapper_duo {
+    display: none;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left .tooglebar_child_wrapper_duo .tooglebar_child_wrapper_duo_child .tooglebar_child_wrapper_duo_child_text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-left: 0rem;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_left {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_left .tooglebar_child_right_left_text_wrapper_left .tooglebar_child_right_left_text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_left .tooglebar_child_right_left_text_wrapper_right {
+    background-color: white;
+    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_left .tooglebar_child_right_left_text_wrapper_right .tooglebar_child_right_box {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9F9F9F;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_right {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_right .tooglebar_child_right_right_text_wrapper_left .tooglebar_child_right_right_text {
+    font-size: 14px;
+    font-weight: 400;
+    display: none;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_right .tooglebar_child_right_right_text_wrapper_left .tooglebar_child_right_right_text_mobile {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_right .tooglebar_child_right_right_text_wrapper_right {
+    background-color: #FAF4F4;
+    border-left: 1px solid #9F9F9F;
+  }
+  .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_right .tooglebar_child_right_right_text_wrapper_right .tooglebar_child_right_right_box {
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+  }
+}/*# sourceMappingURL=TooglebarContentRes.css.map */

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../Styles/Tooglebar/TooglebarContent.css'
+import '../../Styles/Tooglebar/TooglebarContentRes.css';
 import Image from 'next/image'
 
 export default function TooglebarContent() {
@@ -74,6 +75,7 @@ export default function TooglebarContent() {
                     <div className='tooglebar_child_right_right'>
                         <div className='tooglebar_child_right_right_text_wrapper_left'> 
                             <h2 className='tooglebar_child_right_right_text'>Sort by</h2>
+                            <h2 className='tooglebar_child_right_right_text_mobile'>Sort by</h2>
                         </div>
 
                         <div className='tooglebar_child_right_right_text_wrapper_right'>
