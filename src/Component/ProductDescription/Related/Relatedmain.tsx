@@ -28,7 +28,7 @@ export default function Relatedmain(props: Relatedmain) {
                                     width={224}
                                     height={222}
                                     className='Productimage'
-                                    src={`/${products.image}`}
+                                    src={products.image}
                                 />
                             </div>
                             <div className='grid_container_details_text'>

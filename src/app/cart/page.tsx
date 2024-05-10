@@ -87,7 +87,7 @@ useEffect(() => {
                       <div className='image_wrapper'>
                         <Image
                           alt='\'
-                          src={`/${items.image}`}
+                          src={items.image}
                           height={24}
                           width={24}
                         />
