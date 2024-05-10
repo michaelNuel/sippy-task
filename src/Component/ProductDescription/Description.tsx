@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import '../../Styles/Description/Description.css';
+import '../../Styles/Description/DescriptionRes.css';
 
 export default function Description() {
     return (

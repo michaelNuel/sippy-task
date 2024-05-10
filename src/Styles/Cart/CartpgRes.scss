@@ -1,13 +1,16 @@
 @import '../Variables/ColorVariables.scss';
 @import '../Partials/mixins.scss';
+@import '../BreakPoints/BreakPoint.scss';
 
-.container{
-    overflow: hidden;
-}
+@media only screen and (max-width: $mobile) {
+    // Styles for mobile devices
 
+    
 .cart_details_wrapper {
     height: 70vh;
-    display: flex;
+
+    display: none;
+    flex-direction: column;
     justify-content: center;
     gap: 3rem;
     margin-top: 3rem;
@@ -120,62 +123,57 @@
                     color: black;
                 }
             }
-           
 
-            .omo{
-                
-                .subTotals_wrapper {
-                    display: flex;
-                    align-items: center;
-                    gap: 2rem;
-                    justify-content: space-between;
-    
-                    .subtotals_cont {
-    
-                        .subtotals_text {
-                            font-size: 12px;
-                            color: black;
-                            font-weight: bold;
-                        }
-                    }
-    
-    
-                    .price_wrapper {
-                        display: flex;
-                        justify-content: space-between;
-    
-                        .price_cart_text {
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: $Tetiary;
-                        }
+            .subTotals_wrapper {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                justify-content: space-between;
+
+                .subtotals_cont {
+
+                    .subtotals_text {
+                        font-size: 12px;
+                        color: black;
+                        font-weight: bold;
                     }
                 }
-    
-    
-                .totals_wrapper{
+
+
+                .price_wrapper {
                     display: flex;
                     justify-content: space-between;
-    
-                    .total_heading_wrapper{
-                        .total_text{
-                            font-size: 12px;
-                            color: black;
-                            font-weight: bold;
-                        }
-                    }
-    
-                    .total_price_wrapper{
-    
-                        .total_price_text{
-                            font-size: 12px;
-                            color: $gold;
-                            font-weight: bold;
-                        }
+
+                    .price_cart_text {
+                        font-size: 12px;
+                        font-weight: bold;
+                        color: $Tetiary;
                     }
                 }
             }
-   
+
+
+            .totals_wrapper{
+                display: flex;
+                justify-content: space-between;
+
+                .total_heading_wrapper{
+                    .total_text{
+                        font-size: 12px;
+                        color: black;
+                        font-weight: bold;
+                    }
+                }
+
+                .total_price_wrapper{
+
+                    .total_price_text{
+                        font-size: 12px;
+                        color: $gold;
+                        font-weight: bold;
+                    }
+                }
+            }
 
 
             .link_wrapper {
@@ -193,3 +191,4 @@
         }
     }
 }
+  }

@@ -2,7 +2,7 @@
 
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-interface CartItem {
+export interface CartItem {
     id: number;
     title: string;
     price: string;
@@ -45,3 +45,4 @@ const cartSlice = createSlice({
 export const { addToCart, removeFromCart } = cartSlice.actions;
 
 export default cartSlice.reducer;
+

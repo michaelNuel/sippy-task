@@ -12,6 +12,7 @@ import Description from '@/Component/ProductDescription/Description';
 import Relatedlist from '@/Component/ProductDescription/Related/Relatedlist';
 import { addToCart } from '@/State/Cart/cartSlice';
 import Link from 'next/link';
+import '../../../Styles/ProductDetails/ProductDetailsRes.css';
 
 
 interface ItemProps {

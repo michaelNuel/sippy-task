@@ -1,8 +1,3 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-
 .navbar_container {
   background-color: white;
 }
@@ -26,9 +21,14 @@ body {
   list-style: none;
   justify-content: space-around;
 }
-.navbar .navbar_wrapper .navbar_menu ul li {
+.navbar .navbar_wrapper .navbar_menu ul .link {
+  text-decoration: none;
+  color: black;
+}
+.navbar .navbar_wrapper .navbar_menu ul .link li {
   font-size: 14px;
   margin-left: 12px;
+  font-weight: bolder;
 }
 .navbar .navbar_wrapper .navbar_icons {
   display: flex;

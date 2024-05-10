@@ -5,20 +5,24 @@ export default function Navbarlist() {
     const navbarIcons = [
         {
             id: 1,
-            iconImage: '/mdi_account-alert-outline.png'
+            iconImage: '/mdi_account-alert-outline.png',
+            href:'#'
         },
 
         {
             id: 2,
-            iconImage: '/search.png'
+            iconImage: '/search.png',
+            href:'#'
         },
         {
             id: 3,
-            iconImage:'/heart.png'
+            iconImage:'/heart.png',
+            href: '#'
         },
         {
             id: 4,
-            iconImage:'/cart.png'
+            iconImage:'/cart.png',
+            href: '/cart'
         }
     ]
   return (

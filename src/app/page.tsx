@@ -1,10 +1,10 @@
 import Homepage from "./home/page";
-import '../Styles/Main/Main.css'
+// import '../Styles/Main/Main.css'
 
 
 export default function Home() {
   return (
-    <main >
+    <main>
       <Homepage />
     </main>
   );

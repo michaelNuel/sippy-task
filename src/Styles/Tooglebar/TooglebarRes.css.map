@@ -1,1 +1,1 @@
-{"version":3,"sources":["TooglebarRes.scss","TooglebarRes.css","../Variables/ColorVariables.scss"],"names":[],"mappings":"AAGA;EAGI;IAEI,oBAAA;ECLN;EDOM;IAEI,gBAAA;IACA,UAAA;IACA,yBEbA;IFeA,mBAAA;IACA,sBAAA;ECPV;AACF","file":"TooglebarRes.css"}
+{"version":3,"sources":["TooglebarRes.scss","TooglebarRes.css"],"names":[],"mappings":"AAGA;EAGI;IAEI,oBAAA;ECLN;EDOM;IAEI,gBAAA;IACA,UAAA;IAEA,sBAAA;IACA,mBAAA;IACA,sBAAA;ECPV;AACF","file":"TooglebarRes.css"}

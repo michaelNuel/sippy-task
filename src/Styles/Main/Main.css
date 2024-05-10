@@ -1,3 +1,5 @@
-main {
-  overflow: hidden;
+@media only screen and (max-width: 576px) {
+  main {
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=Main.css.map */

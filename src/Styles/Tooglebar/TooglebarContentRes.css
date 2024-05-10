@@ -19,7 +19,7 @@
     border-right: 1px solid #9F9F9F;
     padding-right: 0.8rem;
     display: flex;
-    gap: 0.3rem;
+    gap: 0.6rem;
     justify-self: flex-start;
   }
   .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_left .tooglebar_child_wrapper .tooglebar_child_wrapper_left {
@@ -57,6 +57,7 @@
   }
   .tooglebar_content_wrapper .tooglebar_child_wrapper .tooglebar_child_right .tooglebar_child_right_left {
     display: flex;
+    padding-left: 0.3rem;
     align-items: center;
     gap: 0.1rem;
   }

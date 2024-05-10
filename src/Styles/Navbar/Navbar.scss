@@ -1,4 +1,5 @@
-@import '../Styles/Variables/ColorVariables.scss';
+// @import '../Styles/Variables/ColorVariables.scss';
+@import '../Variables/ColorVariables.scss';
 
 .navbar_container {
     background-color: $Primary;
@@ -25,12 +26,18 @@
                 justify-content: space-around;
 
 
+              .link{
+                text-decoration: none;
+                color: black;
 
                 li {
+                
                     font-size: 14px;
                     margin-left: 12px;
                     font-weight: bolder;
                 }
+              }
+              
             }
         }
 
@@ -45,12 +52,5 @@
 }
 
 
-//Navbar Responsive styles
 
-@media only screen and (max-width: $mobile) {
-       
-    .navbar_container{
 
-        background-color: red ;
-    }
-}

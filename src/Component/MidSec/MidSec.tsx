@@ -1,4 +1,5 @@
 import '../../Styles/MidSec/MidSec.css';
+import '../../Styles/MidSec/MidsecRes.css';
 
 export default function MidSec() {
     return (

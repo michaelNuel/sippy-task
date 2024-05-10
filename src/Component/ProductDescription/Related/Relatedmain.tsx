@@ -1,5 +1,6 @@
 import Image from "next/image"
 import '../../../Styles/Related/Related.css'
+import '../../../Styles/Related/RelatedRes.css';
 import Link from "next/link"
 
 type Relatedmain = {

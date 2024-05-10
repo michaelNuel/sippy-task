@@ -5,7 +5,7 @@
   .wrapper .toogle_bar {
     position: sticky;
     top: 0.3vh;
-    background-color: #FAF4F4;
+    background-color: blue;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
   }

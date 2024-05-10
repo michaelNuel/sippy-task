@@ -1,0 +1,9 @@
+@media only screen and (max-width: 576px) {
+  .grid_wrapper {
+    place-content: center;
+    place-items: center;
+  }
+  .grid_wrapper .grid_container .grid_container_child {
+    padding: 2rem;
+  }
+}/*# sourceMappingURL=ProductlistRes.css.map */

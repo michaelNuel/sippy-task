@@ -2,7 +2,7 @@
 @import '../Variables/ColorVariables.scss';
 
 .container{
- 
+   overflow: hidden;
 
     .path_wrapper{
         display: flex;

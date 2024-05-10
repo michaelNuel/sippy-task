@@ -1,0 +1,33 @@
+@media only screen and (max-width: 576px) {
+  .midSec_container {
+    height: 90vh;
+    background-color: #FAF4F4;
+  }
+  .midSec_container .midSec_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  .midSec_container .midSec_wrapper .midSec_child {
+    display: flex;
+    flex-direction: column;
+  }
+  .midSec_container .midSec_wrapper .midSec_child .midSec_mainText {
+    margin-top: 2rem;
+  }
+  .midSec_container .midSec_wrapper .midSec_child .midSec_mainText .mainText_text {
+    font-size: 22px;
+    color: black;
+  }
+  .midSec_container .midSec_wrapper .midSec_child .midSec_subText {
+    margin-top: -1.4rem;
+    width: 14rem;
+  }
+  .midSec_container .midSec_wrapper .midSec_child .midSec_subText .subText_text {
+    font-size: 14px;
+    color: #9F9F9F;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=MidsecRes.css.map */

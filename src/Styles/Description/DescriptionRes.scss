@@ -1,0 +1,63 @@
+@import '../BreakPoints/BreakPoint.scss';
+@import '../Variables/ColorVariables.scss';
+@import '../Partials/mixins.scss';
+
+
+
+@media only screen and (max-width: $mobile) {
+    // Styles for mobile devices
+
+
+    .description_wrapper_container {
+        display: none;
+        justify-content: center;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-top: 1px solid $Tetiary;
+        border-bottom: 1px solid $Tetiary;
+
+        .description_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .description_text_wrapper {
+                width: 356px;
+                // margin-left: 5rem;
+                // margin-right: 5rem;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: auto;
+
+                .description_heading {
+                     display: grid ;
+                     place-items: center;
+                     place-content: center;
+                    .main_heading {
+                        font-size: 2rem;
+                        font-weight: bold;
+                    }
+                }
+
+                .description_text_child {
+
+
+                    .description_text {
+                        @include textStyle;
+                        color: $Tetiary;
+                    }
+                }
+            }
+
+
+            .description_image_wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+            }
+        }
+    }
+}

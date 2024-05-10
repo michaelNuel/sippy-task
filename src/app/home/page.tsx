@@ -4,6 +4,7 @@ import MidSec from '@/Component/MidSec/MidSec'
 import Navbarlist from '@/Component/Navbar/Navbarlist'
 import Tooglebar from '@/Component/Tooglebar/Tooglebar'
 import React from 'react'
+import '../../Styles/Main/Main.css';
 
 export default function Homepage() {
     return (

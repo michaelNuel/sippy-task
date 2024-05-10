@@ -1,11 +1,12 @@
 'use client'
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchProducts } from '../../State/Product/productSlice';
-import { AppDispatch, RootState } from '../../State/Store';
+// import React, { useEffect } from 'react';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { fetchProducts } from '../../State/Product/productSlice';
+// import { AppDispatch, RootState } from '../../State/Store';
 import Image from 'next/image';
 import '../../Styles/ProductList/ProductList.css'
 import Link from 'next/link';
+import '../../Styles/ProductList/ProductlistRes.css';
 
 type ProductListProps = {
     imageList: {

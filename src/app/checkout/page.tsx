@@ -3,10 +3,11 @@ import Homepg from '@/Component/HomePage/Homepg'
 import MidSec from '@/Component/MidSec/MidSec'
 import Navbarlist from '@/Component/Navbar/Navbarlist'
 import React from 'react'
+import '../../Styles/Checkout/CheckOut.css';
 
 export default function page() {
   return (
-    <div>
+    <div className='container'>
       <div>
         <Navbarlist />
       </div>

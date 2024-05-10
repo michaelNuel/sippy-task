@@ -1,0 +1,20 @@
+@import  '../BreakPoints/BreakPoint.scss';
+@import '../../Styles/Partials/mixins.scss';
+
+
+@media only screen and (max-width: $mobile) {
+    // Styles for mobile devices
+
+    .grid_wrapper{
+        place-content: center;
+        place-items: center;
+
+
+        .grid_container{
+
+            .grid_container_child{
+                padding: 2rem;
+            }
+        }
+    }
+  }

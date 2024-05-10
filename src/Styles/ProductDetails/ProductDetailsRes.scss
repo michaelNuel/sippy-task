@@ -1,0 +1,400 @@
+@import '../BreakPoints/BreakPoint.scss';
+@import '../Partials/mixins.scss';
+@import '../Variables/ColorVariables.scss';
+
+@media only screen and (max-width: $mobile) {
+    // Styles for mobile devices
+    
+.container{
+    overflow: hidden;
+ 
+     .path_wrapper{
+         display: flex;
+         align-items: center;
+         gap: .6em;
+         margin-right: 1rem;
+         margin-left: 1rem;
+ 
+         .path_wrapper_left{
+ 
+             .path_wrapper_text{
+                @include textStyle;
+                color: $Tetiary;
+             }
+         }
+ 
+         .path_wrapper_middle_text{
+ 
+             .path_wrapper_text{
+                 @include textStyle;
+                 color: $Tetiary;
+             }
+         }
+ 
+         .path_wrapper_right{
+             margin-top: .7rem;
+             margin-bottom: .7rem;
+             padding-left: 1rem;
+             padding-right: 1rem;
+             border-left: 1px solid $Tetiary;
+             .path_wrapper_right_text_wrapper{
+                 .path_right_text{
+                     @include textStyle;
+                     color: black;
+                 }
+             }
+         }
+     }
+ 
+     .body_wrapper_container {
+         margin-top: 1rem;
+         padding-bottom: 3rem;
+         .body_wrapper{
+             display: flex;
+             flex-direction: column;
+             // align-items: center;
+             justify-content: center;
+             gap:1rem;
+ 
+             .body_wrapper_left{
+ 
+                 .body_wrapper_Image_container{
+                     background-color: $button;
+                     border-radius: 10px;
+                     padding: .1rem;
+              
+                 }
+             }
+ 
+             .body_wrapper_right{
+                 display: flex;
+                 flex-direction: column;
+                 
+ 
+                 .body_wrapper_right_top{
+                     padding-bottom: 1.5rem;
+                     
+                     .body_wrapper_right_heading{
+                         .heading_details{
+                             display: flex;
+                             flex-direction: column;
+                             gap: -2rem;
+ 
+                             .heading_details_top{
+                                 .heading_title{
+                                     font-size: 40px;
+                                     font-weight: 500;
+                                 }
+                             }
+ 
+                             .heading_details_bottom{
+                                 margin-top: -2.7rem;
+                                 .heading_price{
+                                     font-size: 18px;
+                                     color: $Tetiary;
+                                 }
+                             }
+                         }
+                     }
+ 
+                     .review_wrapper{
+                         display: flex;
+                         gap: 1rem;
+ 
+                         .review_wrapper_left{
+                           font-size: 12px;
+                         }
+ 
+                         .review_wrapper_right{
+                             font-size: 12px;
+                             padding-left: 1rem;
+                             padding-right: 1rem;
+                             border-left: 1px solid $Tetiary;
+                         }
+                     }
+ 
+                     .body_wrapper_details_container{
+                         .body_wrapper_item_details{
+                             width: 330px;
+ 
+                             .item_details_text{
+                                 font-size: 12px;
+                                 font-weight: 300;
+                             }
+                         }
+ 
+                         .body_wrapper_item_size{
+                             display: flex;
+                             flex-direction: column;
+ 
+                             .body_wrapper_item_text{
+ 
+                                 .item_text{
+                                     font-size: 12px;
+                                     color: $Tetiary;
+                                 }
+                             }
+ 
+                             .size_wrapper{
+                                 display: flex;
+                                 gap: 1rem;
+ 
+                                 .size_label_left{
+                                     .btn_size_l{
+                                         width: 2rem;
+                                         height: 1.5rem;
+                                         border-radius: 5px;
+                                         background-color: rgb(223, 221, 221);
+                                         border: none;
+ 
+                                     }
+                                 }
+                                 .size_label_middle{
+                                     .btn_size_xl{
+                                       width: 2rem;
+                                       height: 1.5rem;
+                                       border-radius: 5px;
+                                       background-color: rgb(223, 221, 221);
+                                       border: none;
+                                     }
+                                 }
+                                 .size_label_right{
+                                     .btn_size_xs{
+                                         width: 2rem;
+                                         height: 1.5rem;
+                                         border-radius: 5px;
+                                         background-color: rgb(223, 221, 221);
+                                         border: none;
+                                     }
+                                 }
+                                 
+ 
+                             }
+ 
+                             .color_wrapper{
+                                 display: flex;
+                                 flex-direction: column;
+                                 .body_wrapper_item_color{
+                                     .item_text{
+                                         font-size: 12px;
+                                         color: $Tetiary;
+                                     }
+                                 }
+ 
+                                 .color_div{
+                                     display: flex;
+                                     gap: 1rem;
+ 
+                                     .color_div_left{
+                                         width: 1.5rem;
+                                         height: 1.5rem;
+                                         background-color: #816DFA;
+                                         border-radius: 50px;
+                                     }
+ 
+                                     .color_div_middle{
+                                         width: 1.5rem;
+                                         height: 1.5rem;
+                                         background-color: black;
+                                         border-radius: 50px;
+                                     }
+ 
+                                     .color_div_right{
+                                         width: 1.5rem;
+                                         height: 1.5rem;
+                                         background-color: #CDBA7B;
+                                         border-radius: 50px;
+                                     }
+                                 }
+                             }
+                         }
+ 
+                         .cart_increment_wrapper{
+                             display: flex;
+                             align-items: center;
+                             margin-top: 1rem;
+                             justify-content: flex-start;
+                             gap: 1.5rem;
+ 
+                             .increment_decrement_wrapper{
+                                 display: flex;
+                                 border: 1px solid black;
+                                 border-radius: 20px;
+                                 width: 5rem;
+                                 height: 2rem;
+                                 align-items: center;
+                                 justify-content: center;
+                                 gap: .7rem;
+ 
+                                 .decrement_wrapper{
+ 
+                                     .decrement{
+                                         background-color: transparent;
+                                         border: none;
+                                     }
+                                 }
+                                   
+                                     .display{
+                                         font-size: .9rem;
+                                     }
+ 
+                                 .increment_wrapper{
+                                    
+                                     .increment{
+                                         background-color: transparent;
+                                         border: none;
+                                     }
+                                 }
+                             }
+ 
+                             .cart_button_wrapper_container{
+ 
+                                 .cart_button_wrapper{
+ 
+                                     .cart_btn{
+                                         background-color: transparent;
+                                         height: 3rem;
+                                         width: 7rem;
+                                         border-radius: 20px;
+                                     }
+                                 }
+                             }
+                         }
+ 
+                     }
+                 }
+ 
+                 .body_wrapper_right_bottom{
+                     display: flex;
+                     flex-direction: column;
+                     padding-top: 2rem;
+                     border-top: 1px solid $Tetiary;
+                     gap: .2rem;
+ 
+                     .bottom_line_one{
+                         display: flex;
+                         align-items: center;
+                         gap:1rem;
+ 
+                         .bottom_line_one_left{
+ 
+                             .left_one_text{
+                                 @include textStyle;
+                                 color: $Tetiary
+                             }
+                         }
+ 
+                         .bottom_line_one_middle{
+ 
+                             .middle_one_text{
+                                 @include textStyle;
+                                 color: $Tetiary;
+                             }
+                         }
+ 
+                         .bottom_line_one_right{
+ 
+                              .right_one_text{
+                                 @include textStyle;
+                                 color: $Tetiary;
+                              }
+                         }
+ 
+                     }
+ 
+ 
+                     .bottom_line_two{
+                         display: flex;
+                         align-items: center;
+                         gap: .6rem;
+ 
+                         .bottom_line_two_left{
+                             .left_two_text{
+                                 @include textStyle;
+                                 color: $Tetiary;
+                             }
+                         }
+ 
+                         .bottom_line_two_middle{
+ 
+                             .middle_two_text{
+                                 @include textStyle;
+                                 color: $Tetiary;
+                             }
+                         }
+ 
+                         .bottom_line_two_right{
+                             .right_two_text{
+                                 @include textStyle;
+                                 color: $Tetiary;
+                             }
+                         }
+                     }
+ 
+                     .bottom_line_three{
+                       display: flex;
+                       align-items: center;
+                       gap: .6rem;
+ 
+                       .bottom_line_three_left{
+ 
+                         .left_three_text{
+                             @include textStyle;
+                             color:$Tetiary;
+                         }
+                       }
+ 
+                       .bottom_line_three_middle{
+ 
+                         .middle_three_text{
+                             @include textStyle;
+                             color: $Tetiary;
+                         }
+                       }
+ 
+                       .bottom_line_three_right{
+ 
+                         .right_three_text{
+                             @include textStyle;
+                             color: $Tetiary;
+                         }
+                       }
+                     }
+ 
+                     .bottom_line_four{
+                         display: flex;
+                         align-items: center;
+ 
+                         .bottom_line_four_left{
+                             
+                             .left_four_text{
+                                 @include textStyle;
+                                 color: $Tetiary
+                             }
+                         }
+ 
+                         .bottom_line_four_middle{
+ 
+                             .middle_four_text{
+                                 @include textStyle;
+                                 color: $Tetiary
+                             }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .container_child{
+     margin-right: .5rem;
+     margin-left:.5rem ;
+ }
+
+  }
