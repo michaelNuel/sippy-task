@@ -21,22 +21,22 @@ export default function Navbar(props: navbarProps) {
                         <ul>
                             <Link className='link' href={'/home'}><li>Home</li></Link>
                             <Link className='link' href={'#'}> <li>Shop</li></Link>
-                           <Link className='link' href={'#'}><li>About</li></Link>
-                           <Link className='link' href={'#'}><li>Contact</li></Link> 
+                            <Link className='link' href={'#'}><li>About</li></Link>
+                            <Link className='link' href={'#'}><li>Contact</li></Link>
                         </ul>
                     </div>
                     {props.nav.map(menu => {
                         return (
-                            <div  key={menu.id} className='navbar_icons'>
+                            <div key={menu.id} className='navbar_icons'>
                                 <div>
                                     <Link href={menu.href}>
-                                    <Image
-                                        alt='#'
-                                        src={menu.iconImage}
-                                        className='icon_image'
-                                        width={18}
-                                        height={18}
-                                    />
+                                        <Image
+                                            alt='#'
+                                            src={menu.iconImage}
+                                            className='icon_image'
+                                            width={18}
+                                            height={18}
+                                        />
                                     </Link>
                                 </div>
 
