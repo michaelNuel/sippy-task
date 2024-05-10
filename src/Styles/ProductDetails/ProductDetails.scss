@@ -210,7 +210,14 @@
                             margin-top: 1rem;
                             justify-content: flex-start;
                             gap: 1.5rem;
+                             
+                            .cart_wrapper{
 
+                                .cart{
+                                    text-decoration: underline;
+                                    color: black;
+                                }
+                            }
                             .increment_decrement_wrapper{
                                 display: flex;
                                 border: 1px solid black;

@@ -157,6 +157,10 @@
   justify-content: flex-start;
   gap: 1.5rem;
 }
+.container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_top .body_wrapper_details_container .cart_increment_wrapper .cart_wrapper .cart {
+  text-decoration: underline;
+  color: black;
+}
 .container .body_wrapper_container .body_wrapper .body_wrapper_right .body_wrapper_right_top .body_wrapper_details_container .cart_increment_wrapper .increment_decrement_wrapper {
   display: flex;
   border: 1px solid black;
