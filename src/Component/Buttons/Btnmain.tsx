@@ -18,7 +18,7 @@ export default function Btnmain(props: BtnmainProps) {
     const image = [
         {
             id: 1,
-            image: './item1.png',
+            image: './chair.png',
             title: 'Trenton modular sofa_3',
             price: '$25,000.00'
         },
