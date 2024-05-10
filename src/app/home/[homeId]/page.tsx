@@ -133,24 +133,31 @@ const Item: React.FC<ItemProps> = ({ params }) => {
  const count = useSelector((state: RootState) => state.counter.value);
  const cartItems = useSelector((state: RootState)=> state.cart.items)
  const dispatch = useDispatch();
-
- const handleAddToCart = (item: ItemData | null ) => {
  
+ const handleAddToCart = (item: ItemData | null) => {
   if (item) {
     // Ensure cartQuantity property is included when creating a new item
     const tempProduct = { ...item, cartQuantity: 1 };
     dispatch(addToCart(tempProduct));
-    console.log('Updated cart state:', store.getState().cart.items, cartItems);
+    setShowPopup(true); // Show the popup when item is added to the cart
   } else {
     console.error('Cannot add null item to cart');
   }
 };
-
+   
+const [showPopup, setShowPopup] = useState(false);
 
   const homeId = params.homeId; // Get the homeId from the params prop
 
   const [item, setItem] = useState<ItemData | null>(null); // State to store the item
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(false); // Hide the popup after 3 seconds
+    }, 3000);
+
+    return () => clearTimeout(timer); // Clear the timer on component unmount
+  }, [showPopup]);
 
   useEffect(() => {
     const image: ItemData[] =[
