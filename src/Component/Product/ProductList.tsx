@@ -31,7 +31,7 @@ export default function ProductList(props: ProductListProps) {
                                         width={224}
                                         height={222}
                                         className='Productimage'
-                                        src={`/${images.image}`}
+                                        src={images.image}
                                     />
                                 </div>
 

@@ -5,7 +5,7 @@ export default function Relatedlist() {
     const relatedImage = [
         {
             id: 1,
-            image: './item1.png',
+            image: './chair.png',
             title: 'Trenton modular sofa_3',
             price: '$25,000.00'
           },
