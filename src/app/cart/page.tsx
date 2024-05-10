@@ -14,7 +14,7 @@ import { useDispatch } from 'react-redux';
 import { addToCart, CartItem  } from '@/State/Cart/cartSlice';
 
 
-export default function page() {
+export default function Cart() {
   const subHeading = [
     {
       id: 1,
@@ -37,22 +37,22 @@ export default function page() {
   const cartItems = useSelector((state: RootState) => state.cart.items);
   const dispatch = useDispatch()
 
-//   useEffect(() => {
+  useEffect(() => {
    
-//     // Load cart items from local storage when the component mounts
-//     const storedCartItems = localStorage.getItem('cartItems');
-//     if (storedCartItems) {
-//         const parsedCartItems = JSON.parse(storedCartItems);
-//         // Dispatch an action to add the loaded cart items to the Redux store
-//         parsedCartItems.forEach((item: CartItem) => {
-//             dispatch(addToCart(item));
-//         });
-//     }
-// }, []);
+    // Load cart items from local storage when the component mounts
+    const storedCartItems = localStorage.getItem('cartItems');
+    if (storedCartItems) {
+        const parsedCartItems = JSON.parse(storedCartItems);
+        // Dispatch an action to add the loaded cart items to the Redux store
+        parsedCartItems.forEach((item: CartItem) => {
+            dispatch(addToCart(item));
+        });
+    }
+}, []);
  
-// useEffect(() => {
-//   localStorage.setItem('cartItems', JSON.stringify(cartItems));
-// }, [cartItems]);
+useEffect(() => {
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+}, [cartItems]);
 
   return (
     <div className='container'>

@@ -153,10 +153,27 @@ const Item: React.FC<ItemProps> = ({ params }) => {
 
 
   useEffect(() => {
+    const image: ItemData[] = [
+      {
+        id: 1,
+        image: './item1.png',
+        title: 'Trenton modular sofa_3',
+        price: '$25,000.00'
+      },
+      {
+        id: 2,
+        image: './item2.png',
+        title: 'Granite dining table',
+        price: '$25,000.00'
+      },
+      // Rest of the array elements...
+    ];
+  
     // Fetch the item data based on the homeId
     const selectedItem = image.find(item => item.id === Number(homeId));
     setItem(selectedItem || null); // If no item is found, set item to null
   }, [homeId]);
+  
 
   return (
     <div className='container'>
